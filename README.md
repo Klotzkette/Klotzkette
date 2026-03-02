@@ -1,16 +1,23 @@
-## Hi there 👋
+# Hallo, ich bin Klotzkette
 
-<!--
-**Klotzkette/Klotzkette** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Entwickler mit Fokus auf **LegalTech**, **KI-Anwendungen im Rechtsbereich** und **Datenschutz-Tools**.
 
-Here are some ideas to get you started:
+## Projekte
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+| Projekt | Beschreibung | Download |
+|---------|-------------|----------|
+| [PDF Anonymizer](https://github.com/Klotzkette/-tom-s-super-simple-one-shot-pdf-pseudonymizer) | KI-gestuetztes Tool zur automatischen Anonymisierung personenbezogener Daten in PDF-Dokumenten | [Windows & Mac](https://github.com/Klotzkette/-tom-s-super-simple-one-shot-pdf-pseudonymizer/releases/latest) |
+| [Paragrafen Tic-Tac-Toe](https://github.com/Klotzkette/klotz) | Tic-Tac-Toe-Spiel mit Paragrafenzeichen, Schatten und Animationen | [Windows & Mac](https://github.com/Klotzkette/klotz/releases/latest) |
+
+## Themenbereiche
+
+- **Legal AI** - KI-Anwendungen im Rechtsbereich
+- **LegalTech** - Technologie-Tools fuer Juristen
+- **Legal Databases** - Juristische Datenbanken und Datensaetze
+- **iOS Development** - Apps fuer iPhone und iPad
+- **Games** - Spiele und Game-Projekte
+
+## Kontakt
+
+- Web: [klotzkette.com](https://www.klotzkette.com)
+- LinkedIn: [linkedin.com/in/braegel](https://de.linkedin.com/in/braegel)
