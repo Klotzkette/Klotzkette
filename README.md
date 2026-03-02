@@ -8,6 +8,7 @@ Entwickler mit Fokus auf **LegalTech**, **KI-Anwendungen im Rechtsbereich** und 
 |---------|-------------|----------|
 | [PDF Anonymizer](https://github.com/Klotzkette/-tom-s-super-simple-one-shot-pdf-pseudonymizer) | KI-gestuetztes Tool zur automatischen Anonymisierung personenbezogener Daten in PDF-Dokumenten | [Windows & Mac](https://github.com/Klotzkette/-tom-s-super-simple-one-shot-pdf-pseudonymizer/releases/latest) |
 | [Paragrafen Tic-Tac-Toe](https://github.com/Klotzkette/klotz) | Tic-Tac-Toe-Spiel mit Paragrafenzeichen, Schatten und Animationen | [Windows & Mac](https://github.com/Klotzkette/klotz/releases/latest) |
+| [Word-Gliederungs-Retter](https://github.com/Klotzkette/legaltech) | Automatische Gliederungsstandardisierung fuer Word-Dokumente | - |
 
 ## Themenbereiche
 
