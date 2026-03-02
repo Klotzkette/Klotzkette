@@ -1,26 +1,26 @@
-# Hallo, ich bin Klotzkette 👋
+# Hey, I'm Klotzkette 👋
 
-Entwickler mit Fokus auf **LegalTech**, **KI-Anwendungen im Rechtsbereich** und **Datenschutz-Tools**.
+Developer focused on **LegalTech**, **AI applications in the legal sector** and **data privacy tools**.
 
 ---
 
-## 🛠️ Projekte
+## 🛠️ Projects
 
-| Projekt | Beschreibung | Download |
+| Project | Description | Download |
 |---------|-------------|----------|
-| [PDF Anonymizer](https://github.com/Klotzkette/tom-s-super-simple-one-shot-pdf-pseudonymizer) | KI-gestuetztes Tool zur automatischen Anonymisierung personenbezogener Daten in PDF-Dokumenten | [Windows & Mac](https://github.com/Klotzkette/tom-s-super-simple-one-shot-pdf-pseudonymizer/releases/latest) |
-| [Paragrafen Tic-Tac-Toe](https://github.com/Klotzkette/klotz) | Tic-Tac-Toe-Spiel mit Paragrafenzeichen, Schatten und Animationen | [Windows & Mac](https://github.com/Klotzkette/klotz/releases/latest) |
-| [Word-Gliederungs-Retter](https://github.com/Klotzkette/legaltech) | Automatische Gliederungsstandardisierung fuer Word-Dokumente | [Windows & Mac](https://github.com/Klotzkette/legaltech/releases/latest) |
+| [PDF Anonymizer](https://github.com/Klotzkette/tom-s-super-simple-one-shot-pdf-pseudonymizer) | AI-powered tool for automatic anonymization of personal data in PDF documents | [Windows & Mac](https://github.com/Klotzkette/tom-s-super-simple-one-shot-pdf-pseudonymizer/releases/latest) |
+| [Paragraph Tic-Tac-Toe](https://github.com/Klotzkette/klotz) | Tic-Tac-Toe game with paragraph symbols, shadows and animations | [Windows & Mac](https://github.com/Klotzkette/klotz/releases/latest) |
+| [Word Heading Fixer](https://github.com/Klotzkette/legaltech) | Automatic heading standardization for Word documents | [Windows & Mac](https://github.com/Klotzkette/legaltech/releases/latest) |
 
 ---
 
-## 🎯 Themenbereiche
+## 🎯 Topics
 
-- 🤖 **Legal AI** - KI-Anwendungen im Rechtsbereich
-- ⚖️ **LegalTech** - Technologie-Tools fuer Juristen
-- 🗃️ **Legal Databases** - Juristische Datenbanken und Datensetze
-- 📱 **iOS Development** - Apps fuer iPhone und iPad
-- 🎮 **Games** - Spiele und Game-Projekte
+- 🤖 **Legal AI** - AI applications in the legal sector
+- ⚖️ **LegalTech** - Technology tools for lawyers
+- 🗃️ **Legal Databases** - Legal databases and datasets
+- 📱 **iOS Development** - Apps for iPhone and iPad
+- 🎮 **Games** - Games and game projects
 
 ---
 
@@ -36,7 +36,7 @@ Entwickler mit Fokus auf **LegalTech**, **KI-Anwendungen im Rechtsbereich** und 
 
 ---
 
-## 📬 Kontakt
+## 📬 Contact
 
 - Web: [klotzkette.com](https://www.klotzkette.com)
 - LinkedIn: [linkedin.com/in/braegel](https://de.linkedin.com/in/braegel)
