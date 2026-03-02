@@ -1,11 +1,5 @@
 # Hallo, ich bin Klotzkette 👋
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" />
-</p>
-
 Entwickler mit Fokus auf **LegalTech**, **KI-Anwendungen im Rechtsbereich** und **Datenschutz-Tools**.
 
 ---
