@@ -11,6 +11,7 @@ Developer focused on **LegalTech**, **AI applications in the legal sector** and 
 | [PDF Anonymizer](https://github.com/Klotzkette/tom-s-super-simple-one-shot-pdf-pseudonymizer) | AI-powered tool for automatic anonymization of personal data in PDF documents | [Windows & Mac](https://github.com/Klotzkette/tom-s-super-simple-one-shot-pdf-pseudonymizer/releases/latest) |
 | [Paragraph Tic-Tac-Toe](https://github.com/Klotzkette/klotz) | Tic-Tac-Toe game with paragraph symbols, shadows and animations | [Windows & Mac](https://github.com/Klotzkette/klotz/releases/latest) |
 | [Word Heading Fixer](https://github.com/Klotzkette/legaltech) | Automatic heading standardization for Word documents | [Windows & Mac](https://github.com/Klotzkette/legaltech/releases/latest) |
+| [Local PDF Anonymizer](https://github.com/Klotzkette/local-pdf-anonymizer) | Local PDF anonymization tool | [Windows & Mac](https://github.com/Klotzkette/local-pdf-anonymizer/releases/latest) |
 
 ---
 
