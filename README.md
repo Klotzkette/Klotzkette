@@ -12,6 +12,7 @@ Not a developer, not an engineer – just someone who discovered vibe coding and
 | [Paragraph Tic-Tac-Toe](https://github.com/Klotzkette/klotz) | Tic-Tac-Toe game with paragraph symbols, shadows and animations | [Windows & Mac](https://github.com/Klotzkette/klotz/releases/latest) |
 | [Word Heading Fixer](https://github.com/Klotzkette/legaltech) | Automatic heading standardization for Word documents | [Windows & Mac](https://github.com/Klotzkette/legaltech/releases/latest) |
 | [Local PDF Anonymizer](https://github.com/Klotzkette/local-pdf-anonymizer) | Local PDF anonymization tool | [Windows & Mac](https://github.com/Klotzkette/local-pdf-anonymizer/releases/latest) |
+| [Kanzlei Tic-Tac-Toe](https://github.com/Klotzkette/games) | 80s-Synthwave Juristen Tic-Tac-Toe with CRT effects and paragraph rain | [Windows & Mac](https://github.com/Klotzkette/games/releases/latest) |
 
 
 > ⚠️ **Fair warning:** All of this is vibe-coded with AI. I have no idea what I'm doing most of the time. Use at your own risk (and amusement).
