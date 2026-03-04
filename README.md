@@ -1,6 +1,6 @@
 # Hey, I'm Klotzkette 👋
 
-Developer focused on **LegalTech**, **AI applications in the legal sector** and **data privacy tools**.
+Not a developer, not an engineer – just someone who discovered vibe coding and can't stop tinkering. Everything here is built with AI assistance, curiosity, and a healthy amount of stumbling around in the dark. 😅
 
 ---
 
@@ -13,6 +13,8 @@ Developer focused on **LegalTech**, **AI applications in the legal sector** and 
 | [Word Heading Fixer](https://github.com/Klotzkette/legaltech) | Automatic heading standardization for Word documents | [Windows & Mac](https://github.com/Klotzkette/legaltech/releases/latest) |
 | [Local PDF Anonymizer](https://github.com/Klotzkette/local-pdf-anonymizer) | Local PDF anonymization tool | [Windows & Mac](https://github.com/Klotzkette/local-pdf-anonymizer/releases/latest) |
 
+
+> ⚠️ **Fair warning:** All of this is vibe-coded with AI. I have no idea what I'm doing most of the time. Use at your own risk (and amusement).
 ---
 
 ## 🎯 Topics
