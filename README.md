@@ -17,6 +17,14 @@ Not a developer, not an engineer – just someone who discovered vibe coding and
 > ⚠️ **Fair warning:** All of this is vibe-coded with AI. I have no idea what I'm doing most of the time. Use at your own risk (and amusement).
 ---
 
+## Why Vibe-Coding?
+
+The beauty of vibe-coding is this: as a non-developer, you can finally **visualize** what you actually want – build it as a working app for PC or Mac, and then show the real software engineers exactly what you had in mind.
+
+Because let’s be honest – this is the eternal problem: Non-programmers try to explain what they need, programmers don’t quite get it, and the result is something that kind of works but doesn’t really do what the end users actually wanted.
+
+Now end users can just **show** what they’re looking for. Is it IT-secure? No. Would a professional cringe? Probably. But it works *a little bit* – and for communicating an idea, it’s absolutely perfect.
+
 ## 🎯 Topics
 
 - 🤖 **Legal AI** - AI applications in the legal sector
