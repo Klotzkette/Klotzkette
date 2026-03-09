@@ -1,4 +1,4 @@
-# Hey, I'm Klotzkette
+# Hey, I’m Klotzkette
 
 Not a developer, not an engineer -- just someone who discovered vibe coding and can't stop tinkering. Everything here is built with AI assistance, curiosity, and a healthy amount of stumbling around in the dark.
 
@@ -17,9 +17,9 @@ Now end users can just **show** what they're looking for. Is it IT-secure? No. W
 ## What I'm working on
 
 | Project | What it does | Status | Download |
-|---------|-------------|--------|----------|
+|----------|--------------|--------|----------|
 | [PDF Anonymizer](https://github.com/Klotzkette/tom-s-super-simple-one-shot-pdf-pseudonymizer) | Takes a PDF, sends the text to OpenAI, and blacks out or replaces all personal data (names, addresses, IBANs, etc.) automatically. | Working on it | [Windows & Mac](https://github.com/Klotzkette/tom-s-super-simple-one-shot-pdf-pseudonymizer/releases/latest) |
-| [Local PDF Anonymizer](https://github.com/Klotzkette/local-pdf-anonymizer) | Same idea as above, but runs entirely offline with a local AI model. No API key, no cloud, no costs. | Working on it | [Windows & Mac](https://github.com/Klotzkette/local-pdf-anonymizer/releases/latest) |
+| [Local PDF Anonymizer](https://github.com/Klotzkette/local-pdf-anonymizer) | Same idea as above, but runs entirely offline with Qwen3.5-9B (GGUF). No API key, no cloud, no costs. | Working on it | [Windows & Mac](https://github.com/Klotzkette/local-pdf-anonymizer/releases/latest) |
 | [Word Heading Fixer](https://github.com/Klotzkette/legaltech) | Opens a Word document and standardizes all headings so they look consistent. Useful for legal documents. | Working on it | [Windows & Mac](https://github.com/Klotzkette/legaltech/releases/latest) |
 | [Kanzlei Tic-Tac-Toe](https://github.com/Klotzkette/games) | A silly 80s-Synthwave Tic-Tac-Toe game with CRT effects and paragraph rain. Just for fun. | Done (for now) | [Windows & Mac](https://github.com/Klotzkette/games/releases/latest) |
 
