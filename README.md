@@ -20,6 +20,8 @@ Now end users can just **show** what they're looking for. Is it IT-secure? No. W
 |----------|--------------|--------|----------|
 | [PDF Anonymizer](https://github.com/Klotzkette/tom-s-super-simple-one-shot-pdf-pseudonymizer) | Takes a PDF, sends the text to OpenAI, and blacks out or replaces all personal data (names, addresses, IBANs, etc.) automatically. | Working on it | [Windows & Mac](https://github.com/Klotzkette/tom-s-super-simple-one-shot-pdf-pseudonymizer/releases/latest) |
 | [Local PDF Anonymizer](https://github.com/Klotzkette/local-pdf-anonymizer) | Same idea as above, but runs entirely offline with Qwen3.5-9B (GGUF). No API key, no cloud, no costs. | Working on it | [Windows & Mac](https://github.com/Klotzkette/local-pdf-anonymizer/releases/latest) |
+| [Gen-Z Translator](https://github.com/Klotzkette/gen-z-translator) | Chrome Extension die deutschen Text in Gen-Z / Gen-Alpha Jugendsprache verwandelt. | Working on it | [GitHub](https://github.com/Klotzkette/gen-z-translator) |
+| [Tracker Sidebar Plugin](https://github.com/Klotzkette/tracker-sidebar-plugin) | Wer trackt wen warum wozu -- Chrome Extension Tracker Checker. | Working on it | [GitHub](https://github.com/Klotzkette/tracker-sidebar-plugin) |
 | [Kanzlei Tic-Tac-Toe](https://github.com/Klotzkette/games) | A silly 80s-Synthwave Tic-Tac-Toe game with CRT effects and paragraph rain. Just for fun. | Done (for now) | [Windows & Mac](https://github.com/Klotzkette/games/releases/latest) |
 
 > All of this is vibe-coded with AI. I have no idea what I'm doing most of the time. Use at your own risk (and amusement).
