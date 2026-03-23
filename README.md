@@ -1,3 +1,19 @@
+> **⚖️ All Rights Reserved – Alle Rechte vorbehalten**
+>
+> **English:**
+> All rights in the content, source code, documentation, and other materials published under this GitHub account are reserved by the account holder.
+> No license, right of use, or permission of any kind — whether express or implied — is granted to any person or entity.
+> Any use, reproduction, modification, distribution, or other exploitation requires the prior written consent of the account holder.
+> In particular, the absence of a LICENSE file in any repository shall not be construed as a grant of any rights whatsoever.
+>
+> **Deutsch:**
+> Sämtliche Rechte an den Inhalten, dem Quellcode, der Dokumentation und allen sonstigen Materialien, die unter diesem GitHub-Konto veröffentlicht werden, sind dem Kontoinhaber vorbehalten (§§ 2, 7, 11 ff., 15 ff. UrhG).
+> Es wird keinerlei Lizenz, Nutzungsrecht oder Genehmigung — weder ausdrücklich noch stillschweigend — an irgendeine Person oder Organisation erteilt (§ 31 Abs. 5 UrhG — Zweckübertragungslehre).
+> Jede Nutzung, Vervielfältigung, Bearbeitung, Verbreitung oder sonstige Verwertung bedarf der vorherigen schriftlichen Zustimmung des Kontoinhabers.
+> Insbesondere ist das Fehlen einer LICENSE-Datei in einem Repository nicht als Einräumung irgendwelcher Rechte auszulegen.
+
+---
+
 # Hey, I'm Klotzkette
 
 Not a developer, not an engineer -- just someone who discovered vibe coding and can't stop tinkering. Everything here is built with AI assistance, curiosity, and a healthy amount of stumbling around in the dark.
