@@ -33,15 +33,14 @@ Now end users can just **show** what they're looking for. Is it IT-secure? No. W
 
 | Project | What it does | Status | Download |
 |-----------|----------------|---------|------------|
-| [Gen-Z Translator](https://github.com/Klotzkette/gen-z-translator) | Chrome Extension die deutschen Text in Gen-Z / Gen-Alpha Jugendsprache verwandelt. | Working on it | [GitHub](https://github.com/Klotzkette/gen-z-translator) |
-| [Tracker Sidebar Plugin](https://github.com/Klotzkette/tracker-sidebar-plugin) | Wer trackt wen warum wozu -- Chrome Extension Tracker Checker. | Working on it | [GitHub](https://github.com/Klotzkette/tracker-sidebar-plugin) |
-| [Tracker Viewer](https://github.com/Klotzkette/tracker-viewer) | Chrome Extension die zeigt welche Tracker und Cookies aktiv sind (nur Anzeige, kein Blocking). | Working on it | [GitHub](https://github.com/Klotzkette/tracker-viewer) |
-| [LegalTech](https://github.com/Klotzkette/legaltech) | Tom's Super Simple Word Heading Fixer -- Automatic heading standardization for Word documents. | Working on it | [GitHub](https://github.com/Klotzkette/legaltech) |
-| [Paragraph Tic-Tac-Toe](https://github.com/Klotzkette/klotz) | A Tic-Tac-Toe game with § and §§ on a rotated board (Windows & Mac). | Done (for now) | [GitHub](https://github.com/Klotzkette/klotz) |
-| [Kanzlei Tic-Tac-Toe](https://github.com/Klotzkette/games) | A silly 80s-Synthwave Tic-Tac-Toe game with CRT effects and paragraph rain. Just for fun. | Done (for now) | [Windows & Mac](https://github.com/Klotzkette/games/releases/latest) |
+| [Gen-Z Translator](https://github.com/Klotzkette/gen-z-translator) | Chrome Extension that converts German text into Gen-Z / Gen-Alpha youth slang. | In progress | [Repo](https://github.com/Klotzkette/gen-z-translator) |
+| [Tracker Sidebar Plugin](https://github.com/Klotzkette/tracker-sidebar-plugin) | Chrome Extension that shows who is tracking you, why, and for whom. | In progress | [Repo](https://github.com/Klotzkette/tracker-sidebar-plugin) |
+| [Tracker Viewer](https://github.com/Klotzkette/tracker-viewer) | Chrome Extension that displays active trackers and cookies — display only, no blocking. | In progress | [Repo](https://github.com/Klotzkette/tracker-viewer) |
+| [LegalTech](https://github.com/Klotzkette/legaltech) | Tom's Super Simple Word Heading Fixer — automatic heading standardization for Word documents. | In progress | [Repo](https://github.com/Klotzkette/legaltech) |
+| [Paragraph Tic-Tac-Toe](https://github.com/Klotzkette/klotz) | A Tic-Tac-Toe game with § and §§ on a rotated board (Windows & Mac). | Done | [Repo](https://github.com/Klotzkette/klotz) |
+| [Kanzlei Tic-Tac-Toe](https://github.com/Klotzkette/games) | A silly 80s-Synthwave Tic-Tac-Toe game with CRT effects and paragraph rain. Just for fun. | Done | [Download](https://github.com/Klotzkette/games/releases/latest) |
 
 > All of this is vibe-coded with AI. I have no idea what I'm doing most of the time. Use at your own risk (and amusement).
-
 ---
 
 ## Topics
