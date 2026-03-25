@@ -35,15 +35,15 @@ Now end users can just **show** what they're looking for. Is it IT-secure? No. W
 |-----------|----------------|---------|------------|
 | [Gen-Z Translator](https://github.com/Klotzkette/gen-z-translator) | Chrome Extension that converts German text into Gen-Z / Gen-Alpha youth slang. | In progress | [Repo](https://github.com/Klotzkette/gen-z-translator) |
 | [Tracker Sidebar Plugin](https://github.com/Klotzkette/tracker-sidebar-plugin) | Chrome Extension that shows who is tracking you, why, and for whom. | In progress | [Repo](https://github.com/Klotzkette/tracker-sidebar-plugin) |
-| [LegalTech](https://github.com/Klotzkette/legaltech) | Tom's Super Simple Word Heading Fixer — automatic heading standardization for Word documents. | In progress | [Repo](https://github.com/Klotzkette/legaltech) |
 | [Paragraph Tic-Tac-Toe](https://github.com/Klotzkette/klotz) | A Tic-Tac-Toe game with § and §§ on a rotated board (Windows & Mac). | Done | [Repo](https://github.com/Klotzkette/klotz) |
-| [Kanzlei Tic-Tac-Toe](https://github.com/Klotzkette/games) | A silly 80s-Synthwave Tic-Tac-Toe game with CRT effects and paragraph rain. Just for fun. | Done | --  |
+| [Kanzlei Tic-Tac-Toe](https://github.com/Klotzkette/games) | A silly 80s-Synthwave Tic-Tac-Toe game with CRT effects and paragraph rain. Just for fun. | Done | -- |
 
 > All of this is vibe-coded with AI. I have no idea what I'm doing most of the time. Use at your own risk (and amusement).
+
 ---
+
 ## Topics
 
-- LegalTech -- Technology tools for lawyers
 - Legal Databases -- Legal databases and datasets
 - iOS Development -- Apps for iPhone and iPad
 - Games -- Games and game projects
