@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      width: 260px;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+      background: #0a0a0a;
+      padding: 24px 20px 18px;
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #e8e8ed;
+      letter-spacing: -0.02em;
+      margin-bottom: 3px;
+    }
+
+    .subtitle {
+      font-size: 10px;
+      color: #5a5a5e;
+      letter-spacing: 0.02em;
+      margin-bottom: 20px;
+    }
+
+    .toggle-area {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: 14px 16px;
+      background: #141414;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+
+    .toggle-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: #d4d4d8;
+    }
+
+    .toggle {
+      position: relative;
+      width: 48px;
+      height: 26px;
+      cursor: pointer;
+    }
+    .toggle input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      inset: 0;
+      background: #2a2a2a;
+      border-radius: 26px;
+      transition: background 0.25s ease;
+    }
+    .slider::before {
+      content: '';
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      width: 20px;
+      height: 20px;
+      background: #5a5a5e;
+      border-radius: 50%;
+      transition: transform 0.25s ease, background 0.25s ease;
+    }
+    .toggle input:checked + .slider {
+      background: #3a7a94;
+    }
+    .toggle input:checked + .slider::before {
+      transform: translateX(22px);
+      background: #e8e8ed;
+    }
+
+    .status {
+      font-size: 11px;
+      color: #5a5a5e;
+      transition: color 0.2s ease;
+      margin-bottom: 14px;
+    }
+    .status.active {
+      color: #6bb8d4;
+      font-weight: 500;
+    }
+    .status.error {
+      color: #ff453a;
+      font-weight: 500;
+    }
+
+    .footer {
+      font-size: 9px;
+      color: #3a3a3c;
+      letter-spacing: 0.02em;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">beA Dark Mode</div>
+  <div class="subtitle">Besonderes elektronisches Anwaltspostfach</div>
+
+  <div class="toggle-area">
+    <span class="toggle-label">Dark Mode</span>
+    <label class="toggle">
+      <input type="checkbox" id="mainToggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="status" id="status">Aus</div>
+  <div class="footer">v1.0 &mdash; rein kosmetisch</div>
+
+  <script src="js/popup.js"></script>
+</body>
+</html>
