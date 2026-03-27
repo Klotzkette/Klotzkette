@@ -1,0 +1,944 @@
+/* ============================================================
+   beA Dark Mode — Rein grafische Übermalung
+   Für das besondere elektronische Anwaltspostfach (beA)
+
+   WICHTIG: Dieses Stylesheet ändert ausschließlich Farben,
+   Schriftdarstellung und visuelle Effekte.
+   Es werden KEINE Layout-Eigenschaften geändert:
+   - Kein display, position, width, height, margin, padding
+   - Kein z-index, overflow, float, flex, grid
+   - Kein pointer-events, visibility, content
+   Funktionalität bleibt vollständig erhalten.
+
+   Alle Rechte vorbehalten / All rights reserved.
+   ============================================================ */
+
+/* === FOUNDATIONS === */
+
+:root {
+  --bea-dm-bg:            #0a0a0a;
+  --bea-dm-bg-elevated:   #141414;
+  --bea-dm-bg-card:       #1a1a1a;
+  --bea-dm-bg-hover:      #222222;
+  --bea-dm-bg-active:     #2a2a2a;
+  --bea-dm-bg-input:      #111111;
+
+  --bea-dm-border:        #2a2a2a;
+  --bea-dm-border-subtle: #1e1e1e;
+  --bea-dm-border-focus:  #555555;
+
+  --bea-dm-text:          #d4d4d8;
+  --bea-dm-text-bright:   #e8e8ed;
+  --bea-dm-text-muted:    #8e8e93;
+  --bea-dm-text-faint:    #5a5a5e;
+
+  --bea-dm-accent:        #6bb8d4;
+  --bea-dm-accent-hover:  #88cce2;
+  --bea-dm-accent-muted:  #3a7a94;
+
+  --bea-dm-success:       #34c759;
+  --bea-dm-warning:       #ff9f0a;
+  --bea-dm-danger:        #ff453a;
+
+  --bea-dm-shadow:        0 1px 3px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.3);
+  --bea-dm-shadow-lg:     0 4px 24px rgba(0,0,0,0.5);
+
+  --bea-dm-font:          -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+                          "Segoe UI", system-ui, sans-serif;
+
+  --bea-dm-transition:    0.2s ease;
+}
+
+
+/* === GLOBAL OVERRIDES === */
+
+html, body {
+  background-color: var(--bea-dm-bg) !important;
+  color: var(--bea-dm-text) !important;
+  font-family: var(--bea-dm-font) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.brak,
+body.brak-idp,
+html.login-pf {
+  background-color: var(--bea-dm-bg) !important;
+  color: var(--bea-dm-text) !important;
+}
+
+* {
+  scrollbar-color: #3a3a3c #1a1a1a;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bea-dm-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #3a3a3c;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::selection {
+  background: var(--bea-dm-accent-muted) !important;
+  color: #fff !important;
+}
+
+
+/* === BRAK CSS VARIABLE OVERRIDES === */
+
+:root {
+  --brak-dark-blue: var(--bea-dm-accent) !important;
+  --brak-light-blue: var(--bea-dm-bg-elevated) !important;
+  --brak-medium-blue: var(--bea-dm-accent-muted) !important;
+  --brak-greyed-white: var(--bea-dm-bg-input) !important;
+  --brak-red: var(--bea-dm-danger) !important;
+  --brak-green: var(--bea-dm-success) !important;
+  --brak-yellow: var(--bea-dm-warning) !important;
+  --brak-dark-grey: var(--bea-dm-text-muted) !important;
+  --brak-light-grey: var(--bea-dm-border) !important;
+  --brak-medium-grey: var(--bea-dm-text-faint) !important;
+  --brak-white: var(--bea-dm-bg-card) !important;
+  --brak-black: var(--bea-dm-text-bright) !important;
+}
+
+
+/* === TOP BAR / HEADER === */
+
+.top-bar,
+.top-bar-container,
+.top-bar-message,
+.top-bar-operations,
+.top-bar-availability {
+  background-color: var(--bea-dm-bg) !important;
+  border-bottom: 1px solid var(--bea-dm-border-subtle) !important;
+  color: var(--bea-dm-text-muted) !important;
+}
+
+.top-bar-message {
+  background-color: var(--bea-dm-bg-elevated) !important;
+  color: var(--bea-dm-text) !important;
+}
+
+.top-bar-availability {
+  background-color: rgba(255, 69, 58, 0.12) !important;
+  color: var(--bea-dm-danger) !important;
+}
+
+.top-bar a,
+.full-bar-link {
+  color: var(--bea-dm-accent) !important;
+}
+.top-bar a:hover,
+.full-bar-link:hover {
+  color: var(--bea-dm-accent-hover) !important;
+}
+
+header,
+.brak-logo {
+  background-color: var(--bea-dm-bg) !important;
+}
+
+
+/* === NAVIGATION / SIDEBAR === */
+
+nav,
+.navigation-area,
+[class*="sidebar"],
+[class*="folder"],
+[class*="nav-panel"],
+[class*="tree"],
+.ui-panel-content,
+.ui-layout-west,
+.ui-layout-west .ui-layout-unit-content {
+  background-color: var(--bea-dm-bg-elevated) !important;
+  color: var(--bea-dm-text) !important;
+  border-color: var(--bea-dm-border) !important;
+}
+
+
+/* === MAIN CONTENT / PANELS === */
+
+main,
+.application-area,
+.content-area,
+[class*="content-panel"],
+.ui-layout-center,
+.ui-layout-center .ui-layout-unit-content,
+.ui-panel,
+.ui-panel-content,
+.ui-fieldset,
+.ui-fieldset-content {
+  background-color: var(--bea-dm-bg) !important;
+  color: var(--bea-dm-text) !important;
+}
+
+.application-item {
+  background-color: var(--bea-dm-bg-card) !important;
+  border-color: var(--bea-dm-border) !important;
+}
+.application-item:hover {
+  border-color: var(--bea-dm-border-focus) !important;
+}
+
+
+/* === FOOTER === */
+
+footer,
+.brak-linkbanner,
+.brak-copyright {
+  background-color: var(--bea-dm-bg) !important;
+  color: var(--bea-dm-text-faint) !important;
+  border-top: 1px solid var(--bea-dm-border-subtle) !important;
+}
+
+.brak-linkbanner a {
+  color: var(--bea-dm-text-muted) !important;
+}
+.brak-linkbanner a:hover {
+  color: var(--bea-dm-text) !important;
+}
+
+.brak-version {
+  color: var(--bea-dm-text-faint) !important;
+}
+
+
+/* === TYPOGRAPHY === */
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--bea-dm-text-bright) !important;
+}
+
+/* Farbe wird von html/body geerbt — kein breiter Selektor nötig */
+
+a {
+  color: var(--bea-dm-accent) !important;
+}
+a:hover {
+  color: var(--bea-dm-accent-hover) !important;
+}
+a:visited {
+  color: var(--bea-dm-accent-muted) !important;
+}
+
+
+/* === TABLES (PrimeFaces / jQuery UI / Bootstrap) === */
+
+table {
+  border-color: var(--bea-dm-border) !important;
+}
+
+thead,
+.ui-widget-header,
+.ui-datatable thead,
+.ui-datatable .ui-widget-header {
+  background-color: var(--bea-dm-bg-elevated) !important;
+  background-image: none !important;
+  color: var(--bea-dm-text-muted) !important;
+  border-color: var(--bea-dm-border) !important;
+}
+
+thead th,
+.ui-widget-header th {
+  color: var(--bea-dm-text-muted) !important;
+  background-color: var(--bea-dm-bg-elevated) !important;
+  background-image: none !important;
+  border-color: var(--bea-dm-border) !important;
+}
+
+tbody {
+  background-color: var(--bea-dm-bg) !important;
+}
+
+tbody tr {
+  border-color: var(--bea-dm-border-subtle) !important;
+}
+
+tbody tr:hover,
+.ui-widget-content tr:hover {
+  background-color: var(--bea-dm-bg-hover) !important;
+}
+
+tbody tr:nth-child(even),
+.ui-datatable-odd {
+  background-color: var(--bea-dm-bg-elevated) !important;
+}
+
+tbody td,
+.ui-widget-content td {
+  color: var(--bea-dm-text) !important;
+  border-color: var(--bea-dm-border-subtle) !important;
+}
+
+.selected,
+tr.selected,
+.ui-state-highlight {
+  background-color: rgba(107, 184, 212, 0.12) !important;
+  color: var(--bea-dm-accent) !important;
+  border-color: var(--bea-dm-accent-muted) !important;
+}
+
+.unavailable {
+  background-color: var(--bea-dm-bg-elevated) !important;
+  color: var(--bea-dm-text-faint) !important;
+  opacity: 0.6 !important;
+}
+
+.error,
+tr.error {
+  background-color: rgba(255, 69, 58, 0.1) !important;
+  color: var(--bea-dm-danger) !important;
+}
+
+
+/* === FORMS / INPUTS === */
+
+input,
+textarea,
+select,
+.pf-c-form-control,
+.form-control,
+.ui-inputfield,
+.ui-inputgroup,
+.ui-selectonemenu,
+.ui-selectonemenu-label,
+.ui-spinner-input {
+  background-color: var(--bea-dm-bg-input) !important;
+  color: var(--bea-dm-text-bright) !important;
+  border-color: var(--bea-dm-border) !important;
+  font-family: var(--bea-dm-font) !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+.pf-c-form-control:focus,
+.form-control:focus,
+.ui-inputfield:focus {
+  border-color: var(--bea-dm-accent) !important;
+  box-shadow: 0 0 0 3px rgba(107, 184, 212, 0.15) !important;
+}
+
+/* Keyboard-Accessibility: sichtbarer Focus-Ring */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--bea-dm-accent) !important;
+  outline-offset: 2px !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--bea-dm-text-faint) !important;
+}
+
+.input-password {
+  background-color: var(--bea-dm-bg-input) !important;
+  border-color: var(--bea-dm-border) !important;
+}
+
+.is-invalid,
+.ui-state-error {
+  border-color: var(--bea-dm-danger) !important;
+}
+
+.invalid-feedback,
+.ui-state-error-text {
+  color: var(--bea-dm-danger) !important;
+}
+
+label,
+.form-check-label {
+  color: var(--bea-dm-text) !important;
+}
+
+/* Checkbox / Radio */
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--bea-dm-accent) !important;
+}
+
+
+/* === BUTTONS === */
+
+button,
+.btn,
+.ui-button {
+  font-family: var(--bea-dm-font) !important;
+}
+
+.btn-primary,
+button.btn-primary,
+.ui-button.ui-priority-primary,
+.ui-state-default {
+  background-color: var(--bea-dm-accent-muted) !important;
+  background-image: none !important;
+  color: #fff !important;
+  border: 1px solid var(--bea-dm-accent-muted) !important;
+  font-weight: 500 !important;
+}
+
+.btn-primary:hover,
+.ui-button.ui-priority-primary:hover,
+.ui-state-default:hover,
+.ui-state-hover {
+  background-color: var(--bea-dm-accent) !important;
+  background-image: none !important;
+  border-color: var(--bea-dm-accent) !important;
+  color: #000 !important;
+}
+
+.ui-state-active {
+  background-color: var(--bea-dm-accent) !important;
+  background-image: none !important;
+  color: #000 !important;
+  border-color: var(--bea-dm-accent) !important;
+}
+
+.btn-close {
+  filter: invert(1) !important;
+}
+
+button:disabled,
+.btn:disabled,
+.ui-state-disabled {
+  opacity: 0.35 !important;
+}
+
+.disable {
+  color: var(--bea-dm-text-faint) !important;
+}
+
+/* Secondary/outline buttons */
+.btn-secondary,
+.btn-outline-primary,
+.ui-button.ui-priority-secondary {
+  background-color: transparent !important;
+  color: var(--bea-dm-text) !important;
+  border-color: var(--bea-dm-border) !important;
+}
+.btn-secondary:hover,
+.btn-outline-primary:hover,
+.ui-button.ui-priority-secondary:hover {
+  background-color: var(--bea-dm-bg-hover) !important;
+  border-color: var(--bea-dm-text-muted) !important;
+  color: var(--bea-dm-text-bright) !important;
+}
+
+
+/* === TOKEN SELECTION (Login) === */
+
+#token-selection-dropdown,
+#token-options {
+  background-color: var(--bea-dm-bg-card) !important;
+  border-color: var(--bea-dm-border) !important;
+  box-shadow: var(--bea-dm-shadow-lg) !important;
+}
+
+#token-selection {
+  background-color: var(--bea-dm-bg-input) !important;
+  color: var(--bea-dm-text) !important;
+  border-color: var(--bea-dm-border) !important;
+}
+
+.token-option {
+  color: var(--bea-dm-text) !important;
+}
+.token-option:hover {
+  background-color: var(--bea-dm-bg-hover) !important;
+}
+
+.token-label {
+  color: var(--bea-dm-text) !important;
+}
+
+.token-icon {
+  color: var(--bea-dm-accent) !important;
+}
+
+
+/* === MODALS (Bootstrap + BRAK) === */
+
+.modal-content {
+  background-color: var(--bea-dm-bg-card) !important;
+  border-color: var(--bea-dm-border) !important;
+  box-shadow: var(--bea-dm-shadow-lg) !important;
+}
+
+.modal-header {
+  background-color: var(--bea-dm-bg-elevated) !important;
+  border-bottom: 1px solid var(--bea-dm-border) !important;
+  color: var(--bea-dm-text-bright) !important;
+}
+
+.modal-title {
+  color: var(--bea-dm-text-bright) !important;
+  font-weight: 600 !important;
+}
+
+.modal-body {
+  background-color: var(--bea-dm-bg-card) !important;
+  color: var(--bea-dm-text) !important;
+}
+
+.modal-footer {
+  background-color: var(--bea-dm-bg-elevated) !important;
+  border-top: 1px solid var(--bea-dm-border) !important;
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+
+/* === DIALOGS (PrimeFaces / jQuery UI) === */
+
+.ui-dialog {
+  background-color: var(--bea-dm-bg-card) !important;
+  border-color: var(--bea-dm-border) !important;
+  box-shadow: var(--bea-dm-shadow-lg) !important;
+}
+
+.ui-dialog-titlebar {
+  background-color: var(--bea-dm-bg-elevated) !important;
+  background-image: none !important;
+  color: var(--bea-dm-text-bright) !important;
+  border-bottom: 1px solid var(--bea-dm-border) !important;
+}
+
+.ui-dialog .ui-dialog-content {
+  background-color: var(--bea-dm-bg-card) !important;
+  color: var(--bea-dm-text) !important;
+}
+
+.ui-widget-overlay {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+
+/* === EXPANDABLE / ACCORDION === */
+
+.expandable,
+.ui-accordion {
+  border-color: var(--bea-dm-border) !important;
+}
+
+.expandable .header,
+.ui-accordion-header {
+  background-color: var(--bea-dm-bg-elevated) !important;
+  background-image: none !important;
+  color: var(--bea-dm-text) !important;
+  border-color: var(--bea-dm-border) !important;
+}
+
+.expandable .contents,
+.ui-accordion-content {
+  background-color: var(--bea-dm-bg-card) !important;
+  color: var(--bea-dm-text) !important;
+}
+
+.expandable .header:hover,
+.ui-accordion-header:hover {
+  background-color: var(--bea-dm-bg-hover) !important;
+}
+
+
+/* === TABS === */
+
+.ui-tabs {
+  border-color: var(--bea-dm-border) !important;
+}
+
+.ui-tabs-nav {
+  background-color: var(--bea-dm-bg-elevated) !important;
+  background-image: none !important;
+  border-color: var(--bea-dm-border) !important;
+}
+
+.ui-tabs-nav li {
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+}
+
+.ui-tabs-nav li a {
+  color: var(--bea-dm-text-muted) !important;
+}
+
+.ui-tabs-selected,
+.ui-tabs-nav .ui-state-active {
+  background-color: var(--bea-dm-bg-card) !important;
+  border-bottom-color: var(--bea-dm-accent) !important;
+}
+
+.ui-tabs-selected a,
+.ui-tabs-nav .ui-state-active a {
+  color: var(--bea-dm-accent) !important;
+}
+
+.ui-tabs-panel {
+  background-color: var(--bea-dm-bg-card) !important;
+  color: var(--bea-dm-text) !important;
+}
+
+
+/* === MENU / DROPDOWN === */
+
+.ui-menu {
+  background-color: var(--bea-dm-bg-card) !important;
+  border: 1px solid var(--bea-dm-border) !important;
+  box-shadow: var(--bea-dm-shadow-lg) !important;
+}
+
+.ui-menu .ui-menuitem {
+  color: var(--bea-dm-text) !important;
+}
+
+.ui-menu .ui-menuitem:hover {
+  background-color: var(--bea-dm-bg-hover) !important;
+}
+
+.ui-selectonemenu-panel {
+  background-color: var(--bea-dm-bg-card) !important;
+  border: 1px solid var(--bea-dm-border) !important;
+  box-shadow: var(--bea-dm-shadow-lg) !important;
+}
+
+.ui-selectonemenu-panel .ui-selectonemenu-item {
+  color: var(--bea-dm-text) !important;
+}
+
+.ui-selectonemenu-panel .ui-selectonemenu-item:hover {
+  background-color: var(--bea-dm-bg-hover) !important;
+}
+
+.ui-autocomplete-panel {
+  background-color: var(--bea-dm-bg-card) !important;
+  border: 1px solid var(--bea-dm-border) !important;
+  box-shadow: var(--bea-dm-shadow-lg) !important;
+}
+
+
+/* === DATEPICKER === */
+
+.ui-datepicker {
+  background-color: var(--bea-dm-bg-card) !important;
+  border: 1px solid var(--bea-dm-border) !important;
+  box-shadow: var(--bea-dm-shadow-lg) !important;
+}
+
+.ui-datepicker-header {
+  background-color: var(--bea-dm-bg-elevated) !important;
+  background-image: none !important;
+  color: var(--bea-dm-text) !important;
+  border-color: var(--bea-dm-border) !important;
+}
+
+.ui-datepicker-calendar td {
+  background-color: transparent !important;
+}
+
+.ui-datepicker-calendar td a {
+  color: var(--bea-dm-text) !important;
+}
+
+.ui-datepicker-calendar td a:hover {
+  background-color: var(--bea-dm-bg-hover) !important;
+}
+
+.ui-datepicker-current-day a {
+  background-color: var(--bea-dm-accent-muted) !important;
+  color: #fff !important;
+}
+
+
+/* === TOOLTIP === */
+
+.ui-tooltip,
+.tooltip,
+.ui-tooltip-text {
+  background-color: var(--bea-dm-bg-card) !important;
+  color: var(--bea-dm-text) !important;
+  border: 1px solid var(--bea-dm-border) !important;
+  box-shadow: var(--bea-dm-shadow) !important;
+}
+
+
+/* === PROGRESSBAR === */
+
+.ui-progressbar {
+  background-color: var(--bea-dm-bg-elevated) !important;
+  border-color: var(--bea-dm-border) !important;
+}
+
+.ui-progressbar .ui-progressbar-value {
+  background-color: var(--bea-dm-accent) !important;
+  background-image: none !important;
+}
+
+
+/* === SLIDER === */
+
+.ui-slider {
+  background-color: var(--bea-dm-bg-elevated) !important;
+}
+
+.ui-slider-handle {
+  background-color: var(--bea-dm-text) !important;
+  background-image: none !important;
+  border-color: var(--bea-dm-border) !important;
+}
+
+.ui-slider-range {
+  background-color: var(--bea-dm-accent) !important;
+  background-image: none !important;
+}
+
+
+/* === CERTIFICATE INFO === */
+
+.certBasicInfo {
+  background-color: var(--bea-dm-bg-card) !important;
+  border-color: var(--bea-dm-border) !important;
+}
+
+.keyTitle {
+  color: var(--bea-dm-text-muted) !important;
+  font-weight: 600 !important;
+}
+
+.keySection {
+  border-color: var(--bea-dm-border-subtle) !important;
+}
+
+
+/* === ICONS === */
+
+.ui-icon {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E") !important;
+  /* Fallback: invert the existing icon sprite */
+  filter: invert(0.85) !important;
+}
+
+/* FontAwesome through Svelte — just recolor */
+[class*="svelte-fa"] {
+  color: inherit !important;
+}
+
+
+/* === IMAGES / LOGOS — preserve but adapt === */
+
+/* Invert dark-on-light logos so they work on dark bg */
+.brak-logo img,
+.bea-logo img,
+.main-logo img,
+.brak-bea-logo img,
+img[src*="brak"],
+img[src*="beA"],
+img[src*="bea_logo"],
+img[src*="bea-logo"] {
+  filter: brightness(0.85) invert(1) hue-rotate(180deg) !important;
+}
+
+/* Application tile images — soften slightly */
+.application-item img,
+.image-container img {
+  opacity: 0.85 !important;
+  will-change: opacity;
+  transition: opacity 0.2s ease;
+}
+.application-item:hover img,
+.image-container:hover img {
+  opacity: 1 !important;
+}
+
+
+/* === MISC WIDGETS / CATCH-ALL === */
+
+.ui-widget,
+.ui-widget-content {
+  background-color: var(--bea-dm-bg-card) !important;
+  color: var(--bea-dm-text) !important;
+  border-color: var(--bea-dm-border) !important;
+}
+
+/* Fieldsets */
+fieldset,
+.ui-fieldset {
+  border-color: var(--bea-dm-border) !important;
+}
+
+fieldset legend,
+.ui-fieldset-legend {
+  color: var(--bea-dm-text-bright) !important;
+  background-color: transparent !important;
+}
+
+/* Separator lines */
+hr {
+  border-color: var(--bea-dm-border) !important;
+}
+
+/* Search fields */
+input[type="search"],
+.search-field {
+  background-color: var(--bea-dm-bg-input) !important;
+  color: var(--bea-dm-text) !important;
+}
+
+/* Breadcrumb */
+[class*="breadcrumb"] {
+  color: var(--bea-dm-text-muted) !important;
+}
+[class*="breadcrumb"] a {
+  color: var(--bea-dm-accent) !important;
+}
+
+/* Alerts / Notices */
+.alert,
+[class*="alert-"],
+[class*="notice"] {
+  background-color: var(--bea-dm-bg-elevated) !important;
+  border-color: var(--bea-dm-border) !important;
+  color: var(--bea-dm-text) !important;
+}
+
+.alert-danger,
+[class*="alert-danger"] {
+  background-color: rgba(255, 69, 58, 0.1) !important;
+  border-color: rgba(255, 69, 58, 0.3) !important;
+  color: var(--bea-dm-danger) !important;
+}
+
+.alert-success,
+[class*="alert-success"] {
+  background-color: rgba(52, 199, 89, 0.1) !important;
+  border-color: rgba(52, 199, 89, 0.3) !important;
+  color: var(--bea-dm-success) !important;
+}
+
+.alert-warning,
+[class*="alert-warning"] {
+  background-color: rgba(255, 159, 10, 0.1) !important;
+  border-color: rgba(255, 159, 10, 0.3) !important;
+  color: var(--bea-dm-warning) !important;
+}
+
+.alert-info,
+[class*="alert-info"] {
+  background-color: rgba(107, 184, 212, 0.1) !important;
+  border-color: rgba(107, 184, 212, 0.3) !important;
+  color: var(--bea-dm-accent) !important;
+}
+
+
+/* === LAYOUT PANELS (PrimeFaces Layout) === */
+
+.ui-layout-north,
+.ui-layout-south,
+.ui-layout-east,
+.ui-layout-west,
+.ui-layout-center {
+  background-color: var(--bea-dm-bg) !important;
+  border-color: var(--bea-dm-border) !important;
+}
+
+.ui-layout-unit-header {
+  background-color: var(--bea-dm-bg-elevated) !important;
+  background-image: none !important;
+  color: var(--bea-dm-text-bright) !important;
+  border-color: var(--bea-dm-border) !important;
+}
+
+.ui-layout-resizer {
+  background-color: var(--bea-dm-border) !important;
+}
+
+.ui-layout-toggler {
+  background-color: var(--bea-dm-bg-elevated) !important;
+  border-color: var(--bea-dm-border) !important;
+}
+
+
+/* === TOOLBAR === */
+
+.ui-toolbar {
+  background-color: var(--bea-dm-bg-elevated) !important;
+  background-image: none !important;
+  border-color: var(--bea-dm-border) !important;
+}
+
+.ui-toolbar .ui-button {
+  background-color: transparent !important;
+  color: var(--bea-dm-text) !important;
+  border-color: transparent !important;
+}
+
+.ui-toolbar .ui-button:hover {
+  background-color: var(--bea-dm-bg-hover) !important;
+  color: var(--bea-dm-text-bright) !important;
+}
+
+
+/* === PORTAL PAGE SPECIFIC === */
+
+.container {
+  background-color: var(--bea-dm-bg) !important;
+}
+
+.banner-container,
+.banner-base {
+  background-color: var(--bea-dm-bg-elevated) !important;
+  border-color: var(--bea-dm-border) !important;
+}
+
+.banner-message {
+  color: var(--bea-dm-text) !important;
+}
+
+.download-area {
+  background-color: var(--bea-dm-bg-elevated) !important;
+}
+
+.support-area {
+  background-color: var(--bea-dm-bg-elevated) !important;
+}
+
+.logout-button {
+  background-color: transparent !important;
+  color: var(--bea-dm-text-muted) !important;
+  border-color: var(--bea-dm-border) !important;
+}
+.logout-button:hover {
+  color: var(--bea-dm-text) !important;
+  border-color: var(--bea-dm-text-muted) !important;
+}
+
+
+/* === PRINT — don't apply dark mode === */
+
+@media print {
+  html, body, *, *::before, *::after {
+    background-color: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    border-color: #ccc !important;
+    filter: none !important;
+  }
+  img {
+    filter: none !important;
+    opacity: 1 !important;
+  }
+}
