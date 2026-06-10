@@ -17,6 +17,7 @@ As a non-developer, you can finally **visualize** what you actually want -- buil
 | [claude-fuer-deutsches-recht](https://github.com/Klotzkette/claude-fuer-deutsches-recht) | Claude-Skills für deutsches Recht | Python |
 | [klotz](https://github.com/Klotzkette/klotz) | Paragraph Tic-Tac-Toe with legal symbols | JavaScript |
 | [bea-dark-mode](https://github.com/Klotzkette/bea-dark-mode) | Dark mode for the beA lawyer mailbox system | CSS |
+| [arbeitszeugnispruefer-skill](https://github.com/Klotzkette/arbeitszeugnispruefer-skill) | Agent-Skill für die Prüfung deutscher Arbeitszeugnisse nach dem Ampelsystem | Markdown |
 
 ---
 
