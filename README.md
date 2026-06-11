@@ -18,6 +18,7 @@ As a non-developer, you can finally **visualize** what you actually want -- buil
 | [klotz](https://github.com/Klotzkette/klotz) | Paragraph Tic-Tac-Toe with legal symbols | JavaScript |
 | [bea-dark-mode](https://github.com/Klotzkette/bea-dark-mode) | Dark mode for the beA lawyer mailbox system | CSS |
 | [arbeitszeugnispruefer-skill](https://github.com/Klotzkette/arbeitszeugnispruefer-skill) | Agent-Skill für die Prüfung deutscher Arbeitszeugnisse nach dem Ampelsystem | Markdown |
+| [vorlagensammlung-recht](https://github.com/Klotzkette/vorlagensammlung-recht) | Vorlagensammlung zum deutschen Recht: Verträge, Formulare und Schreiben als ODT und Markdown | Markdown |
 
 ---
 
